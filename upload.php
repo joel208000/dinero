@@ -21,7 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $description = isset($_POST["description"]) ? $_POST["description"] : "";
 
-        $connexion->query("INSERT INTO photos (nom_fichier, description) VALUES ('$nomFichierUnique', '$description')");
+        // Utilisation de la fonction NOW() pour insérer la date actuelle
+        $connexion->query("INSERT INTO photos (nom_fichier, description, date_ajout) VALUES ('$nomFichierUnique', '$description', NOW())");
 
         $connexion->close();
 

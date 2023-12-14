@@ -299,6 +299,49 @@ form input[type="submit"]:hover {
 }
 
 
+/*Historique de paris*/
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.image-container div {
+    flex: 0 0 calc(33.3333% - 20px);
+    max-width: calc(33.3333% - 20px);
+}
+
+.image-container img {
+        width: 300px; /* Définissez la largeur de base */
+        height: 300px; /* Définissez la hauteur de base */
+        object-fit: cover; /* Évite toute déformation tout en couvrant la zone spécifiée */
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    
+.image-container p {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container div {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container div {
+        flex: 0 0 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+}
+
+
+
+
 
 /*RESPONSIVE */
 
