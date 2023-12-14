@@ -14,7 +14,7 @@ body{
 .overlay{
 
     height: 100vh;
-    background: url(Images/death.jpg) center center no-repeat;
+    background: url(Images/death-164761_640.jpg) center center no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -210,6 +210,92 @@ h1 .auto-typing{
     margin-left: 135px;
     border-radius: 5px; 
     border: 3px solid rgba(149, 10, 230, 0.555);
+}
+
+
+/* Services */
+.paie, .faites {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+p {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.numero-de-depot {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.numero-de-depot p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.numero-de-depot img {
+    vertical-align: middle;
+}
+
+.formule {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+
+.formule span {
+    font-weight: bold;
+}
+
+.gold {
+    color:red;
+}
+.diamond {
+    color: darkturquoise;
+}
+.argent {
+    color: rgb(9, 16, 16);
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label,
+form input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    background-color:#121212;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color:#121212;
 }
 
 

@@ -15,7 +15,7 @@
                 <li><a href="acc.php">Accueil</a></li>
                 <li><a href="ut.php">Historique de gain</a></li>
                 <li><a href="#">A propos</a></li>
-                <li><a href="#">Service</a></li>
+                <li><a href="service.php">Service</a></li>
             </ul>
             <div id="icons"></div>
         </nav>
