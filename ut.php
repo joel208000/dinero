@@ -7,20 +7,32 @@
     <title>Page Utilisateur</title>
 
     <style>
-        /* Ajoutez ces styles pour afficher les images horizontalement en groupes de trois */
-        .image-container {
-            display: flex;
-            justify-content: space-around;
-            /* Ajustez l'espacement entre les images ici */
-        }
+    .image-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
+    .image-container img {
+        width: calc(100% / 3 - 20px);
+        height: auto;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 1200px) {
         .image-container img {
-            width: 300px;
-            height: 400px;
-            margin-bottom: 20px;
-            /* Ajoutez une marge en bas de chaque image */
+            width: calc(100% / 2 - 20px);
         }
-    </style>
+    }
+
+    @media screen and (max-width: 768px) {
+        .image-container img {
+            width: 100%;
+        }
+    }
+</style>
+
 </head>
 <body >
 
