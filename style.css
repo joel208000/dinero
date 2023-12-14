@@ -14,7 +14,7 @@ body{
 .overlay{
 
     height: 100vh;
-    background: url(Images/death.jpg) center center no-repeat;
+    background: url(Images/death-164761_640.jpg) center center no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -214,7 +214,7 @@ h1 .auto-typing{
 
 
 /* Services */
-h1, p {
+.paie, .faites {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1.5rem;

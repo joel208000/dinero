@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paiement Canal Dinero</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
    
 </head>
 <body>
@@ -21,8 +21,8 @@
         </nav>
     </header>
 <div>
-   <h1>Passer au paiement</h1>
-    <p>Faites un bon choix et integrer mon canal pour maximiser vos gains comme moi </p>
+   <h1 class="paie">Passer au paiement</h1>
+    <p class="faites">Faites un bon choix et integrer mon canal pour maximiser vos gains comme moi </p>
     <div class="numero-de-depot">
         <span>Choisissez l'un des numeros sur lequel fait le depot</span>
         <p>+225 XXXXXXX  <span><img src="./Images/wave-logo.png" alt="" style="width: 70px; height: auto;"></span></p>
