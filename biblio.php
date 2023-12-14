@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-<header class="biblio">
-        <nav>
+<header>
+        <nav  id="nav">
             <a href="#"><img src="./Images/capture.png" alt="" class="logo"></a>
             <ul id="nav-list">
                 <li><a href="acc.php">Accueil</a></li>
@@ -16,12 +16,11 @@
                 <li><a href="#">A propos</a></li>
                 <li><a href="#">Service</a></li>
             </ul>
-            <img src="./Images/menu.png" alt="" class="menu" id="menu-icon">
+            <div id="icons"></div>
         </nav>
     </header>
     <div class="overlayy">
 
-    </div>
     <section>
         <br>
         <br>
@@ -39,5 +38,7 @@
         puis beaucoup d'argent, voire de battre des records. Aujourd'hui, il gagne bien sa vie grâce à ses nombreux gains.
         </div>
     </section>
+    </div>
+
 </body>
 </html>
