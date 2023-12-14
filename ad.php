@@ -4,42 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Administrateur</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        form {
-            width: 300px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        label, input {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="admin.css">
+   
 </head>
 <body>
 
@@ -59,9 +25,7 @@
     </form>
     
 
-    <!-- Afficher les images téléchargées avec option de suppression -->
     <?php
-
     $conn = new mysqli("localhost", "root", "", "database");
 
     if ($conn->connect_error) {
@@ -72,17 +36,21 @@
 
     while ($row = $result->fetch_assoc()) {
         echo '<div>';
-        echo '<div style="margin-bottom: 20px;">'; // Ajoutez une marge en bas de chaque image
-        echo '<div style="margin-left: 10px;">'; // Ajoutez une marge en bas de chaque image
-        echo '<img src="uploads/' . $row["nom_fichier"] . '" alt="' . $row["description"] . '" width="300" height="300">';        
+        echo '<div style="margin-bottom: 20px;">'; 
+        echo '<div style="margin-left: 10px;">'; 
+        echo '<img src="uploads/' . $row["nom_fichier"] . '" alt=" width="300" height="300">';   
+        echo '<p>' . $row["description"] . '</p>';           
         echo '<form action="delete.php" method="post" style="display:inline;">';
         echo '<input type="hidden" name="id" value="' . $row["id"] . '">';
-        echo '<button type="submit">Supprimer</button>';
+        echo '<button type="submit" class="btn">Supprimer</button>';
         echo '</form>';
+        echo '</div>';
+        echo '</div>';
         echo '</div>';
     }
 
     $conn->close();
-    ?>
+?>
+
 </body>
 </html>
