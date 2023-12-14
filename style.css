@@ -1,0 +1,310 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Tw Cen Mt';
+    font-size: 14px;
+    margin: 0;
+}
+
+.overlay{
+
+    position: relative;
+    height: 100vh;
+    background: url(Images/death-164761_640\ \(1\).jpg) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    z-index: -100;
+}
+.overlayy{
+     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+     background: url(Images/Lucky-Jet-Telegram-Channel.gif) center center no-repeat; 
+    background-size: cover;
+    z-index: -100; 
+}
+.overlayyy{
+
+     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+     background: url(Images/paris-sportifs-direct-chapitrage.jpg) center center no-repeat; 
+    background-size: cover;
+    z-index: -100; 
+}
+/*Menu Burger */
+.menu-burger {
+    display: none;
+    list-style: none;
+}
+
+header{
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    font-size: calc(0.5rem + 1.5vw);
+}
+
+nav .logo{
+    width: 170px;
+}
+#icons {
+    display: none;
+    cursor: pointer;
+}
+
+nav .menu{
+    position: absolute;
+    right: 105px;
+    width: 45px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+
+}
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: #2eb0f0;
+}
+
+
+.text {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 9rem;
+}
+
+.text h1 {
+    font-size: 7vw; /* Utilisation d'une taille de police relative */
+    margin-bottom: 2rem;
+    
+}
+
+.text p {
+    font-size: 1rem; /* Taille de police adaptative */
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem; /* Réduction de l'espace entre les paragraphes */
+}
+
+.text a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem; /* Taille de police adaptative */
+    border: 1px solid #2eb0f0;
+    color: #2eb0f0;
+    padding: 8px 16px; /* Réduction de la taille des espacements */
+    margin-right: 20px; /* Réduction de la marge à droite */
+}
+
+
+
+
+.text a.cv {
+    color: #121212;
+    background-color:#2eb0f0;
+    font-weight: 600;
+    
+}
+
+
+
+
+h1 .auto-typing{
+    color: #2eb0f0;
+}
+ /* Ajoutez votre style CSS ici */
+ .hidden {
+    display: none;
+}
+.ut{
+    color: rgba(233, 99, 10, 0.897);
+    background-image: url(./Images/concept-amenagement-casino-ligne-cartes-jouer-jetons-poker-ligne-roulette-paris-sportifs-football-vegas-jeu-machine-sous-decorations-creatives_771426-3016.avif);
+    background-size: cover;
+        /* Ajuste la taille de l'image pour couvrir tout l'élément */
+        background-repeat: no-repeat;
+        /* Empêche la répétition de l'image */
+        background-position: center center;
+        background-attachment: fixed;
+
+}
+.lorem{
+    margin-left: 30px;
+    font-size: 25px;
+    color: aliceblue;
+}
+.pine{
+    margin-left: 135px;
+    border-radius: 5px; 
+    border: 3px solid rgba(149, 10, 230, 0.555);
+}
+
+.reseaux{
+    
+    position: absolute;
+    top: 350px;
+    left: 470px;
+    
+          
+}
+
+/*RESPONSIVE */
+
+/*Home Page */
+
+@media screen and (max-width:1024px) {
+    
+   
+    nav .logo{
+        max-width: 90%;
+    }
+    .text {
+        flex-wrap: wrap;
+    }
+    .text h1{
+        font-size: 55px;
+        flex-wrap: wrap;
+    }
+
+    .text p {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        flex-wrap: wrap;   
+    }
+
+    .text a {
+        font-size: 1.5rem;
+        padding: 15px 22px;
+    }
+    
+}
+
+@media  screen and (max-width:950px) {
+    nav ul {
+        padding: 0;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .text h1 {
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+    .text p {
+        margin-top: 4rem;
+    }
+   #icons {
+    display: block;
+    z-index: 5;
+   }
+  
+
+   #icons::before {
+    content: "\2630";
+   }
+
+   .active #icons::before {
+        content: "\2715";
+
+   }
+
+   nav ul {
+    position: fixed;
+    flex-direction: column;
+    color: rgb(27, 27, 27);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    left: -100%;
+    top: 5%;
+    text-align: center;
+    transition: 0.25s;
+    padding-bottom: 1rem;
+   }
+
+   nav li {
+    padding: 3px 0;
+   }
+
+
+   nav.active ul {
+    left: 0;
+   }
+
+   .text h1 {
+    font-size: 40px; 
+}
+
+.text p {
+    font-size: 1.2rem; 
+    margin-bottom: 1rem;
+}
+
+.text a {
+    font-size: 1.2rem; 
+    padding: 6px 12px; 
+    margin-right: 15px; 
+}
+
+}
+
+@media screen and (max-width: 435px) {
+    nav .logo {
+        max-width: 80%;
+    }
+
+    .text {
+        padding-top: 6rem;
+    }
+
+    .text h1 {
+        font-size: 8vw;
+        margin-bottom: 1.5rem;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+
+    .text a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin-right: 15px;
+    }
+}

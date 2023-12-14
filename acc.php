@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="o.css">
+    <title>Dinero Paris Sportifs</title>
+    <link rel="stylesheet" href="./style.css">
    
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#"><img src="capture.png" alt="" class="logo"></a>
+        <nav  id="nav">
+            <a href="#"><img src="./Images/capture.png" alt="" class="logo"></a>
             <ul id="nav-list">
                 <li><a href="acc.php">Accueil</a></li>
                 <li><a href="ut.php">Historique de gain</a></li>
                 <li><a href="#">A propos</a></li>
                 <li><a href="#">Service</a></li>
             </ul>
-            <img src="menu.png" alt="" class="menu" id="menu-icon">
+            <div id="icons"></div>
         </nav>
     </header>
     <br>
     <br>
+    <div class="overlay">
+
     <section class="text">
 
-    <h1>rejoins moi <span class="auto-typing"></span></h1>
+    <h1>Rejoins moi <span class="auto-typing"></span></h1>
     <p>
     Que chaque pari soit une opportunité excitante de suivre votre intuition et de célébrer le sport que vous aimez. <br>
      Dans l'univers des paris, chaque match devient une aventure pleine de rebondissements. <br>
@@ -36,9 +38,9 @@
     <a href="biblio.php" class="cv">Bibliographie </a> 
     </section>
 
-    <div class="overlay">
 
     </div>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         let typed = new Typed('.auto-typing', {
@@ -50,14 +52,8 @@
             fadeOutClass: 'typed-fade-out',
             fadeOutDelay: 500
         })
-
-       // Ajoutez un gestionnaire d'événements au clic sur l'icône du menu
-       const menuIcon = document.getElementById('menu-icon');
-        const navList = document.getElementById('nav-list');
-
-        menuIcon.addEventListener('click', () => {
-            navList.classList.toggle('hidden');
-        });
     </script>
+    <script src="./index.js"></script>
+
 </body>
 </html>

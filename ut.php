@@ -39,6 +39,7 @@
     <br>
 
     <!-- Affiche les photos depuis la base de données -->
+   
     <?php
     $conn = new mysqli("localhost", "root", "", "database");
 
@@ -69,5 +70,6 @@
 
     $conn->close();
     ?>
+    
 </body>
 </html>
