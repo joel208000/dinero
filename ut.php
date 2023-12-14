@@ -6,32 +6,6 @@
     <link rel="stylesheet" href="./style.css">
     <title>Page Utilisateur</title>
 
-    <style>
-    .image-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .image-container img {
-        width: calc(100% / 3 - 20px);
-        height: auto;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .image-container img {
-            width: calc(100% / 2 - 20px);
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        .image-container img {
-            width: 100%;
-        }
-    }
-</style>
 
 </head>
 <body >
@@ -49,7 +23,7 @@
         </nav>
     </header>
     
-    <br>
+    
 
     <!-- Affiche les photos depuis la base de données -->
    
@@ -68,7 +42,8 @@
 
     while ($row = $result->fetch_assoc()) {
         echo '<div>';
-        echo '<img src="uploads/' . $row["nom_fichier"] . '" alt="' . $row["description"] . '" width="300" height="300">';
+        echo '<img src="uploads/' . $row["nom_fichier"] . '" alt=" width="300" height="300">';
+        echo '<p>' . $row["description"] . '</p>';           
         echo '</div>';
 
         $count++;
