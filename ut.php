@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="o.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Page Utilisateur</title>
 
     <style>
@@ -22,17 +22,18 @@
         }
     </style>
 </head>
-<body class="ut">
-<header>
-        <nav>
-            <a href="#"><img src="capture.png" alt="" class="logo"></a>
+<body >
+
+    <header>
+        <nav  id="nav">
+            <a href="#"><img src="./Images/capture.png" alt="" class="logo"></a>
             <ul id="nav-list">
                 <li><a href="acc.php">Accueil</a></li>
                 <li><a href="ut.php">Historique de gain</a></li>
                 <li><a href="#">A propos</a></li>
                 <li><a href="#">Service</a></li>
             </ul>
-            <img src="menu.png" alt="" class="menu" id="menu-icon">
+            <div id="icons"></div>
         </nav>
     </header>
     
@@ -70,6 +71,6 @@
 
     $conn->close();
     ?>
-    
+    <script src="./index.js"></script>
 </body>
 </html>

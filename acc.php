@@ -20,8 +20,7 @@
             <div id="icons"></div>
         </nav>
     </header>
-    <br>
-    <br>
+    <br/>
     <div class="overlay">
 
     <section class="text">
