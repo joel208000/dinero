@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Dinero Bibliographie</title>
 </head>
 <body>
 <header>
@@ -38,7 +38,8 @@
         puis beaucoup d'argent, voire de battre des records. Aujourd'hui, il gagne bien sa vie grâce à ses nombreux gains.
         </div>
     </section>
-    </div>
+</div>
 
+<script src="./index.js"></script>
 </body>
 </html>
