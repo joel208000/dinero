@@ -13,18 +13,17 @@ body{
 
 .overlay{
 
-    position: relative;
     height: 100vh;
-    background: url(Images/death-164761_640\ \(1\).jpg) center center no-repeat;
+    background: url(Images/death.jpg) center center no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
-    z-index: -100;
+    color: white;
 }
+
 .overlayy{
     height: 100vh;
     background: url(Images/Lucky-Jet-Telegram-Channel.gif);
